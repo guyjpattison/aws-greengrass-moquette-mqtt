@@ -8,8 +8,8 @@
         "custom_build_command": "./gdk-build.sh"
       },
       "publish": {
-        "bucket": "gg-dev-artifacts",
-        "region": "us-west-2"
+        "bucket": "md-greengrass-component-artifacts",
+        "region": "eu-west-1"
       }
     }
   },
