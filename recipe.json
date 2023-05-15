@@ -2,7 +2,7 @@
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "aws.greengrass.clientdevices.mqtt.Moquette",
   "ComponentType": "aws.greengrass.plugin",
-  "ComponentDescription": "The Moquette MQTT broker component provides an MQTT broker, based on the Moquette MQTT broker, for client devices to connect to your Greengrass core device.",
+  "ComponentDescription": "Mistral Data Modified Moquette MQTT broker component provides an MQTT broker, based on the Moquette MQTT broker, for client devices to connect to your Greengrass core device.",
   "ComponentPublisher": "AWS",
   "ComponentDependencies": {
     "aws.greengrass.clientdevices.Auth": {

@@ -1,6 +1,6 @@
 {
   "component" :{
-    "aws.greengrass.clientdevices.mqtt.Moquette": {
+    "MistralData.greengrass.clientdevices.mqtt.Moquette": {
       "author": "AWS",
       "version": "NEXT_PATCH",
       "build": {

@@ -165,9 +165,13 @@ public class MQTTService extends PluginService {
         p.setProperty(BrokerConstants.JKS_PATH_PROPERTY_NAME, brokerKeyStore.getJksPath());
         p.setProperty(BrokerConstants.KEY_STORE_PASSWORD_PROPERTY_NAME, password);
         p.setProperty(BrokerConstants.KEY_MANAGER_PASSWORD_PROPERTY_NAME, password);
-        p.setProperty(BrokerConstants.ALLOW_ANONYMOUS_PROPERTY_NAME, "false");
+        //Guy May 2023 allow anon connections
+        //p.setProperty(BrokerConstants.ALLOW_ANONYMOUS_PROPERTY_NAME, "false");
+        p.setProperty(BrokerConstants.ALLOW_ANONYMOUS_PROPERTY_NAME, "true");        
         p.setProperty(BrokerConstants.PEER_CERTIFICATE_AS_USERNAME, "true");
-        p.setProperty(BrokerConstants.NEED_CLIENT_AUTH, "true");
+        //Guy May 2023 allow anon connections      
+        //p.setProperty(BrokerConstants.NEED_CLIENT_AUTH, "true");          
+        p.setProperty(BrokerConstants.NEED_CLIENT_AUTH, "false");
         p.setProperty(BrokerConstants.IMMEDIATE_BUFFER_FLUSH_PROPERTY_NAME, "true");
         p.setProperty(BrokerConstants.NETTY_MAX_BYTES_PROPERTY_NAME, String.valueOf(Coerce
             .toInt(moquetteTopics.lookup(BrokerConstants.NETTY_MAX_BYTES_PROPERTY_NAME).dflt("131072")))); // 128KiB
@@ -179,8 +183,9 @@ public class MQTTService extends PluginService {
             rootConfig.lookup(BrokerConstants.NETTY_CHANNEL_READ_LIMIT_PROPERTY_NAME)
                 .dflt(BrokerConstants.DEFAULT_NETTY_CHANNEL_READ_LIMIT_BYTES)));
 
-        //Disable plain TCP port
-        p.setProperty(BrokerConstants.PORT_PROPERTY_NAME, BrokerConstants.DISABLED_PORT_BIND);
+        //Guy May 2023 comment out disabling plain TCP port
+        ////Disable plain TCP port
+        //p.setProperty(BrokerConstants.PORT_PROPERTY_NAME, BrokerConstants.DISABLED_PORT_BIND);
 
         return p;
     }
