@@ -2,7 +2,7 @@
   "component" :{
     "MistralData.greengrass.clientdevices.mqtt.Moquette": {
       "author": "MistralData",
-      "version": "NEXT_PATCH",
+      "version": "1.0.0",
       "build": {
         "build_system": "custom",
         "custom_build_command": "./gdk-build.sh"
