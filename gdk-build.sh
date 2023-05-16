@@ -9,4 +9,4 @@ mvn clean package -DskipTests
 
 cp integration/target/MistralData.greengrass.clientdevices.mqtt.Moquette.jar \
     greengrass-build/artifacts/MistralData.greengrass.clientdevices.mqtt.Moquette/${VERSION}/ \
-    && cp recipe.json recipes/
+    && cp recipe.json greengrass-build/recipes/
