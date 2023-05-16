@@ -19,7 +19,7 @@
       "Lifecycle": {},
       "Artifacts": [
         {
-          "URI": "{artifacts:path}/MistralData.greengrass.clientdevices.mqtt.Moquette.jar"
+          "URI": "s3://md-greengrass-component-artifacts/MistralData.greengrass.clientdevices.mqtt.Moquette.jar"
         }
       ]
     }
