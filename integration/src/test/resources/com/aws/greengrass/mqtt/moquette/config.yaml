@@ -5,10 +5,10 @@
 
 ---
 services:
-    aws.greengrass.clientdevices.mqtt.Moquette: {}
+    MistralData.greengrass.clientdevices.mqtt.Moquette: {}
     aws.greengrass.clientdevices.Auth: {}
     main:
         lifecycle:
             install: echo All installed
         dependencies:
-            - aws.greengrass.clientdevices.mqtt.Moquette
+            - MistralData.greengrass.clientdevices.mqtt.Moquette

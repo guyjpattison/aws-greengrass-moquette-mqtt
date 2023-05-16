@@ -36,7 +36,7 @@ import static com.aws.greengrass.componentmanager.KernelConfigResolver.CONFIGURA
 
 @ImplementsService(name = MQTTService.SERVICE_NAME, autostart = true)
 public class MQTTService extends PluginService {
-    public static final String SERVICE_NAME = "aws.greengrass.clientdevices.mqtt.Moquette";
+    public static final String SERVICE_NAME = "MistralData.greengrass.clientdevices.mqtt.Moquette";
 
     private static BrokerKeyStore brokerKeyStore;
     private final Server mqttBroker = new Server();

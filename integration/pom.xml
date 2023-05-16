@@ -402,6 +402,6 @@
         <skipTests>false</skipTests>
         <excludedGroups></excludedGroups>
         <groups></groups>
-        <greengrassjar.name>aws.greengrass.clientdevices.mqtt.Moquette</greengrassjar.name>
+        <greengrassjar.name>MistralData.greengrass.clientdevices.mqtt.Moquette</greengrassjar.name>
     </properties>
 </project>
