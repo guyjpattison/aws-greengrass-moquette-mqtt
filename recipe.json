@@ -7,7 +7,7 @@
   "ComponentPublisher": "MistralData",
   "ComponentDependencies": {
     "aws.greengrass.clientdevices.Auth": {
-      "VersionRequirement": ">=2.2.0 <2.4.0",
+      "VersionRequirement": ">=2.2.0 <2.5.0",
       "DependencyType": "HARD"
     }
   },
